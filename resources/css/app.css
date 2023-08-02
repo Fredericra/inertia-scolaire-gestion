@@ -1,0 +1,91 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 22px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+@layer components{
+  .grad{
+    @apply bg-gradient-to-r to-blue-400 from-sky-100;
+  }
+  .media{
+    @apply grid sm:grid-cols-1 md:grid-cols-12;
+  }
+  .input{
+    @apply w-full h-9 bg-gray-200 rounded-full indent-12 font-bold text-gray-400;
+  }
+}
+@layer utilities{
+    .comic{
+        font-family: comic sans ms;
+    }
+    .serif{
+        font-family:comic sans-serif ;
+    }
+    .roman{
+        font-family: Times New Roman;
+    }
+    .reg{
+        font-family:Arial Narrow;
+    }
+    .y{
+        scrollbar-width: none;
+    }
+    @media (max-width:750px){
+        .menu{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            letter-spacing: 50px;
+            z-index: 20;
+            margin: 2;
+            padding: 4;
+            width: 450px;
+            background-color: rgb(182, 160, 160);
+        }
+        .search{
+            position: absolute;
+            top: 12px;
+            right: 12px;
+        }
+        .user{
+            position: absolute;
+            top: 50px;
+            right: 5px;
+        }
+        .about{
+            height: 90px;
+        }
+        .tache{
+            width: 450px;
+        }
+        .tache{
+            padding:20px;
+        }
+        .menu1{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 420px;
+            background-color: gray;
+
+        }
+        .a{
+            margin-left:20px;
+        }
+        
+    }
+}
